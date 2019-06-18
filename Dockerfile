@@ -1,4 +1,4 @@
-FROM node:10.16.0-jessie-slim
+FROM node:10.16.0-jessie
 
 RUN mkdir -p /home/node/app/node_modules && chown -R node:node /home/node/app
 
