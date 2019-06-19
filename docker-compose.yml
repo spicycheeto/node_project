@@ -2,7 +2,7 @@ version: "3"
 services:
   web:
     # replace username/repo:tag with your name and image details
-    image: motsdocker/nodejs-shark-demo
+    image: motsdocker/alpine_nodejs
     deploy:
       replicas: 5
       resources:
@@ -12,7 +12,7 @@ services:
       restart_policy:
         condition: on-failure
     ports:
-      - "4000:80"
+      - "4000:8080"
     networks:
       - webnet
 networks:
